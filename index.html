@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Product Listing Page -->
+    <h1 style="text-align: center;">Product-Page</h1>
+<div class="product-list" style="margin-left: 10%;">
+    <div class="product" style="width: 40%; height: 20%;">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQf7sHz5cDQ-zdHjnyXG6sBYx1--8sZCJh7-Zl_1iESHR-zheH7K8ZglWjmmc7cTC2w1Zw&usqp=CAU" alt="Product 1" style=" width: 250px; margin-left: 50px;">
+      <h2>Camera</h2>
+      <p>Price: $350.00</p>
+      <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <button class="add-to-cart" onclick="addToCart('Camera', 350.00)">Add to Cart</button>
+    <!-- Add more products here -->
+  </div>
+  
+  <!-- Product Details Page -->
+  <div class="product" style="width: 40%; height: 40%;">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLNZPbuTu4_WBiwhY4e-1V9RHHS0HM_FZW1Q&usqp=CAU" alt="Product 1" style="width: 300px; margin-left: 40px; height: 286px;">
+    <h2>Mic</h2>
+    <p>Price: $50.00</p>
+    <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <button class="add-to-cart" onclick="addToCart('Mic', 50.00)">Add to Cart</button>
+  </div>
+</div>
+  <!-- Shopping Cart -->
+  <div class="shopping-cart">
+    <h2>Shopping Cart</h2>
+    <ul id="cart-items">
+      <!-- Cart items will be dynamically added here -->
+    </ul>
+    <p>Total: <span id="cart-total">$0.00</span></p>
+    <button onclick="checkout()">Checkout</button>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
